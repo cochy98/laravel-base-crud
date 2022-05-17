@@ -9,7 +9,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a  class="nav-link" 
-                href="#">Home
+                href="{{ route('comics.index') }}">Home
             </a>
           </li>
         </ul>
