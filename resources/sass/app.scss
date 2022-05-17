@@ -1,2 +1,27 @@
 // Importo bootstrap 5
 @import '~bootstrap/scss/bootstrap';
+
+
+div.card {
+
+  img.card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  div.card-body {
+
+    h5.card-title {
+      font-weight: 600;
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+
+    p.card-specs {
+      margin: 0;
+    }
+  }
+}

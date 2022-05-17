@@ -6,6 +6,28 @@
 
 {{-- Punto dove implemento questa section nella pagina principale --}}
 @section('main')    
+  <div class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      @foreach ($comics as $comic)
+      <div class="col">
+        <div class="card h-100">
+          <img src="{{ $comic->thumb }}" class="card-img-top" alt="{{ $comic->title }}">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">{{ $comic->title }}</a></h5>
+            <p class="card-text">{{ $comic->description }}</p>
+            <p class="card-specs"><strong>Serie: </strong> {{ $comic->series }}</p>
+            <p class="card-specs"><strong>Tipo: </strong> {{ $comic->type }}</p>
+            {{-- <span></span> -- <span>{{ $comic->type }}</span> --}}
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">{{ $comic->sale_date }}</small>
+            -- <span>{{ $comic->price }}€</span>
+          </div>
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
 
 
 @endsection

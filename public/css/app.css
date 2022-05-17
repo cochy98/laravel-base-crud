@@ -12173,3 +12173,24 @@ fieldset:disabled .btn {
   }
 }
 
+div.card img.card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.card div.card-body h5.card-title,
+div.card div.card-body .card-title.h5 {
+  font-weight: 600;
+}
+
+div.card div.card-body h5.card-title a,
+div.card div.card-body .card-title.h5 a {
+  color: black;
+  text-decoration: none;
+}
+
+div.card div.card-body p.card-specs {
+  margin: 0;
+}
+
