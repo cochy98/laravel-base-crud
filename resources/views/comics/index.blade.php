@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 {{-- Do un titolo a questa section --}}
-@section('title', 'index')
+@section('title', 'Index')
 
 {{-- Punto dove implemento questa section nella pagina principale --}}
 @section('main')    
@@ -11,7 +11,7 @@
       @foreach ($comics as $comic)
       <div class="col">
         <div class="card h-100">
-          <img src="{{ $comic->thumb }}" class="card-img-top" alt="{{ $comic->title }}">
+          <img src="{{ $comic->thumb }}" class="card-img-top" alt="Picture of {{ $comic->title }}">
           <div class="card-body">
             <h5 class="card-title"><a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a></h5>
             <p class="card-text">{{ $comic->description }}</p>
