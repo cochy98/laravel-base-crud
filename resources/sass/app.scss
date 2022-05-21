@@ -1,8 +1,15 @@
 // Importo bootstrap 5
 @import '~bootstrap/scss/bootstrap';
 
-
+// & Regole di stile per le card della index
 div.card {
+  position: relative;
+
+  .delete-card {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   img.card-img-top {
     height: 300px;
@@ -26,6 +33,17 @@ div.card {
   }
 }
 
+// ? Regole di stile per la show
+div.my-maxy-card {
+  img.maxy-card-img {
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+
+// % Regole di stile per il form della insert
 form {
   max-width: 500px;
   margin: 0 auto;

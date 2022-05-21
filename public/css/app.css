@@ -12173,6 +12173,16 @@ fieldset:disabled .btn {
   }
 }
 
+div.card {
+  position: relative;
+}
+
+div.card .delete-card {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 div.card img.card-img-top {
   height: 300px;
   -o-object-fit: cover;
@@ -12192,6 +12202,13 @@ div.card div.card-body .card-title.h5 a {
 
 div.card div.card-body p.card-specs {
   margin: 0;
+}
+
+div.my-maxy-card img.maxy-card-img {
+  width: 450px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 form {

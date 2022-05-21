@@ -11,6 +11,11 @@
       @foreach ($comics as $comic)
       <div class="col">
         <div class="card h-100">
+          <form action="{{ route('comics.destroy', $comic) }}" method="post" class="delete-card">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Elimina</button>
+          </form>
           <img src="{{ $comic->thumb }}" class="card-img-top" alt="Picture of {{ $comic->title }}">
           <div class="card-body">
             <h5 class="card-title"><a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a></h5>
