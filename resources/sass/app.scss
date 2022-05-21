@@ -35,11 +35,32 @@ div.card {
 
 // ? Regole di stile per la show
 div.my-maxy-card {
-  img.maxy-card-img {
+  div.box-card-img {
     width: 450px;
     height: 600px;
-    object-fit: cover;
+    position: relative;
+
+    button.btn-warning,
+    form.delete {
+      position: absolute;
+      top: 0;
+    }
+
+    .btn-warning {
+      left: 0;
+    }
+
+    form.delete {
+      right: 0;
+    }
+
+    img.maxy-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
+
 }
 
 
