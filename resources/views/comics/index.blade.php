@@ -7,6 +7,15 @@
 {{-- Punto dove implemento questa section nella pagina principale --}}
 @section('main')    
   <div class="container my-5">
+    @if (session('deleted-message'))
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-warning">
+              {{ session('deleted-message') }}
+          </div>
+        </div>
+      </div>
+    @endif
     <div class="row row-cols-1 row-cols-md-3 g-4">
       @foreach ($comics as $comic)
       <div class="col">
