@@ -12210,14 +12210,15 @@ div.my-maxy-card div.box-card-img {
   position: relative;
 }
 
-div.my-maxy-card div.box-card-img button.btn-warning,
+div.my-maxy-card div.box-card-img a.btn-warning,
 div.my-maxy-card div.box-card-img form.delete {
   position: absolute;
   top: 0;
 }
 
-div.my-maxy-card div.box-card-img .btn-warning {
+div.my-maxy-card div.box-card-img a.btn-warning {
   left: 0;
+  color: white;
 }
 
 div.my-maxy-card div.box-card-img form.delete {

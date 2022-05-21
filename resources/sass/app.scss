@@ -40,14 +40,15 @@ div.my-maxy-card {
     height: 600px;
     position: relative;
 
-    button.btn-warning,
+    a.btn-warning,
     form.delete {
       position: absolute;
       top: 0;
     }
 
-    .btn-warning {
+    a.btn-warning {
       left: 0;
+      color: white;
     }
 
     form.delete {
